@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    height: 100vh;
+}
+
+#sidebar {
+    grid-column-start: 1;
+    padding: 16px;
+    background-color: teal;
+}
+
+#container {
+    grid-column-start: 2;
+    padding: 16px;
+    background-color: white;
+}
+
+#avatar {
+    text-align: center;
+    width: 256px;
+    height: 256px;
+}
+
+#button-add {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    bottom: 32px;
+    right: 32px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background-color: teal;
+    color: white;
+    font-size: 28px;
+    border-radius: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 #666;
+}
+
+#button-add:active {
+    transform: scale(1.01);
+    box-shadow: 0 6px 8px 0 #666;
+}
+
+#list-todo {
+    list-style-type: none;
+}
